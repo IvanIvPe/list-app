@@ -3,10 +3,10 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-   <div>
+   <div className={styles.main}>
     <h1 className={styles.title}>Welcome to ListApp</h1>
     <p className={styles.description}>
-      This is the home page of your ListApp application.
+      Manage your lists efficiently and effortlessly.
     </p>
     </div>
   );
