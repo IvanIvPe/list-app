@@ -68,7 +68,7 @@ export default function TodoList() {
             </form>
 
             {todos.length === 0 ? (
-                <p className={styles.emptyState}>No tasks yet. Add one above!</p>
+                <p className={styles.emptyState}>No tasks yet.</p>
             ) : (
                 <ul className={styles.list}>
                     {todos.map((todo) => (
