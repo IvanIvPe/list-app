@@ -1,0 +1,117 @@
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    border-color: #0070f3;
+}
+
+.addButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.addButton:hover {
+    background-color: #0060df;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.item:hover {
+    transform: translateX(2px);
+}
+
+.itemContent {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #0070f3;
+}
+
+.text {
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.completed {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 0.5rem;
+    opacity: 0;
+
+    font-size: 1.2rem;
+}
+
+.item:hover .deleteButton {
+    opacity: 1;
+}
+
+.deleteButton:hover {
+    color: #cc0000;
+}
+
+.emptyState {
+    text-align: center;
+    font-style: italic;
+}

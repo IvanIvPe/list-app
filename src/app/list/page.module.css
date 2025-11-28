@@ -1,0 +1,17 @@
+.list {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-geist-sans, sans-serif);
+}
+
+.list h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+}
