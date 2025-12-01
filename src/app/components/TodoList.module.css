@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     padding: 2rem;
@@ -12,13 +12,14 @@
     display: flex;
     gap: 0.5rem;
     margin-bottom: 2rem;
-    border: 1px solid #e1e1e1;
 }
 
 .input {
     flex: 1;
     padding: 0.75rem;
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--border-color);
+    background-color: var(--background);
+    color: var(--foreground);
     border-radius: 6px;
     font-size: 1rem;
     outline: none;
@@ -26,12 +27,12 @@
 }
 
 .input:focus {
-    border-color: #0070f3;
+    border-color: var(--primary);
 }
 
 .addButton {
     padding: 0.75rem 1.5rem;
-    background-color: #0070f3;
+    background-color: var(--primary);
     color: white;
     border: none;
     border-radius: 6px;
@@ -41,7 +42,7 @@
 }
 
 .addButton:hover {
-    background-color: #0060df;
+    opacity: 0.9;
 }
 
 .list {
@@ -58,7 +59,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem;
-    background-color: #dbdbdba1;
+    background-color: var(--item-bg);
     border-radius: 6px;
     transition: all 0.2s;
 }
@@ -79,17 +80,17 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    accent-color: #0070f3;
+    accent-color: var(--primary);
 }
 
 .text {
     font-size: 1rem;
-    color: #333;
+    color: var(--foreground);
     transition: color 0.2s;
 }
 
 .completed {
-    color: #999;
+    color: var(--secondary-text);
 }
 
 .deleteButton {
@@ -99,7 +100,6 @@
     cursor: pointer;
     padding: 0.5rem;
     opacity: 0;
-
     font-size: 1.2rem;
 }
 
@@ -114,4 +114,5 @@
 .emptyState {
     text-align: center;
     font-style: italic;
+    color: var(--secondary-text);
 }

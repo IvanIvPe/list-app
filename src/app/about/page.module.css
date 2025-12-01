@@ -4,7 +4,7 @@
     padding: 4rem 2rem;
     font-family: var(--font-geist-sans, sans-serif);
     min-height: 100vh;
-    color: #333;
+    color: var(--foreground);
 }
 
 .header {
@@ -15,14 +15,14 @@
 .header h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: #1a1a1a;
+    color: var(--foreground);
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 }
 
 .subtitle {
     font-size: 1.25rem;
-    color: #666;
+    color: var(--secondary-text);
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
@@ -35,23 +35,23 @@
 }
 
 .section {
-    background: white;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    border: 1px solid #eaeaea;
+    border: 1px solid var(--border-color);
 }
 
 .section h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--foreground);
     margin-bottom: 1rem;
 }
 
 .section p {
     line-height: 1.7;
-    color: #444;
+    color: var(--foreground);
     font-size: 1.05rem;
 }
 
@@ -68,12 +68,12 @@
     position: relative;
     padding-left: 1.5rem;
     line-height: 1.6;
-    color: #444;
+    color: var(--foreground);
 }
 
 .featureList li::before {
     content: "•";
-    color: #0070f3;
+    color: var(--primary);
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -81,6 +81,6 @@
 }
 
 .featureList strong {
-    color: #1a1a1a;
+    color: var(--foreground);
     font-weight: 600;
 }

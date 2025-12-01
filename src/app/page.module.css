@@ -5,9 +5,10 @@
   justify-content: center;
   min-height: 100vh;
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #ffffff, #f0f2f5);
+  background: var(--background);
   font-family: var(--font-geist-sans, sans-serif);
   text-align: center;
+  color: var(--foreground);
 }
 
 .hero {
@@ -21,7 +22,7 @@
 .title {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--foreground);
   margin: 0;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -29,7 +30,7 @@
 
 .description {
   font-size: 1.25rem;
-  color: #666;
+  color: var(--secondary-text);
   max-width: 600px;
   line-height: 1.6;
   margin: 0;
@@ -37,7 +38,7 @@
 
 .buttons {
   display: flex;
-  gap: rem;
+  gap: 1rem;
   justify-content: center;
 }
 
@@ -54,26 +55,25 @@
 }
 
 .primaryButton {
-  background-color: #0070f3;
+  background-color: var(--primary);
   color: white;
-  border: 1px solid #0070f3;
+  border: 1px solid var(--primary);
 }
 
 .primaryButton:hover {
-  background-color: #0060df;
-  border-color: #0060df;
+  opacity: 0.9;
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 112, 243, 0.2);
 }
 
 .secondaryButton {
-  background-color: white;
-  color: #333;
-  border: 1px solid #eec;
+  background-color: var(--card-bg);
+  color: var(--foreground);
+  border: 1px solid var(--border-color);
 }
 
 .secondaryButton:hover {
-  border-color: #000;
-  color: #000;
+  border-color: var(--foreground);
+  color: var(--foreground);
   transform: translateY(-1px);
 }
