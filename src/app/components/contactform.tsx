@@ -26,7 +26,7 @@ export default function Contact() {
             <div className={styles.contactInfo}>
                 <h2>Other Ways to Contact Us</h2>
                 <p>Email: <a href="mailto:ivan@pesic.com">ivan@pesic.com</a></p>
-                <p>Phone: <a href="tel:+1234567890">+381 60 1234567</a></p>
+                <p>Phone: <a href="tel:+381601234567">+381 60 1234567</a></p>
                 <p>Address: Učitelj Tasina 20, Niš 18000, Serbia</p>
             </div>
         </div>
